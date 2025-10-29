@@ -1,4 +1,4 @@
-# Gold Loan Management System - Database Design
+# Gold Loan Application System - Database Design & More...
 [![Database: MySQL](https://img.shields.io/badge/Database-MySQL%208.0-blue.svg)](https://www.mysql.com/)
 [![Status: Production Ready](https://img.shields.io/badge/Status-Production%20Ready-success.svg)]()
 
