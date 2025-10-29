@@ -4,17 +4,6 @@
 
 > A comprehensive, enterprise-grade database schema for managing gold loan operations with complete workflow automation, multi-level approvals, and advanced analytics.
 
-## Overview
-
-This database system powers a complete gold loan management platform, enabling financial institutions to:
-
-- Process gold loan applications with automated workflow
-- Manage gold asset valuations and pledges
-- Implement hierarchical approval mechanisms
-- Track loan disbursements and repayments
-- Generate comprehensive business analytics
-- Maintain complete audit trails for compliance
-
 ## Database Architecture
 
 ### Entity Relationship Model
@@ -35,13 +24,11 @@ This database system powers a complete gold loan management platform, enabling f
 - **Tables**: 13 core + 3 views
 - **Stored Procedures**: 2
 - **Indexes**: 35+ optimized indexes
-- **Estimated Load**: ~810 MB/year for 100K applications
 
 ### Technology Stack
 - **Database**: MySQL 8.0+ or PostgreSQL 13+
 - **Normalization**: 3NF with strategic denormalization
 - **Design Pattern**: Star schema for analytics
-- **Backup Strategy**: Daily full + hourly incremental
 
 ## Schema Details
 
