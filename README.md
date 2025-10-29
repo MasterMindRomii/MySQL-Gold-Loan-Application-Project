@@ -1,4 +1,4 @@
-# 🏦 Gold Loan Management System - Database Design
+# Gold Loan Management System - Database Design
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Database: MySQL](https://img.shields.io/badge/Database-MySQL%208.0-blue.svg)](https://www.mysql.com/)
@@ -6,7 +6,7 @@
 
 > A comprehensive, enterprise-grade database schema for managing gold loan operations with complete workflow automation, multi-level approvals, and advanced analytics.
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -19,7 +19,7 @@
 - [Contributing](#contributing)
 - [License](#license)
 
-## 🎯 Overview
+## Overview
 
 This database system powers a complete gold loan management platform, enabling financial institutions to:
 
@@ -32,26 +32,26 @@ This database system powers a complete gold loan management platform, enabling f
 
 **Designed for**: Banks, NBFCs, Gold Loan Companies, Microfinance Institutions
 
-## ✨ Features
+## Features
 
 ### Core Functionality
-- 🔐 **Customer KYC Management** - Complete customer lifecycle with PAN/Aadhar verification
-- 💰 **Loan Application Workflow** - Multi-stage application processing with status tracking
-- 👑 **Gold Asset Cataloging** - Detailed gold item management with purity and weight tracking
-- ✅ **Multi-level Approvals** - Hierarchical approval routing based on loan amounts
-- 💳 **Loan Disbursement** - Multiple disbursement modes with transaction tracking
-- 📊 **Payment Management** - EMI tracking with principal/interest/penalty breakdown
-- 🏢 **Multi-branch Operations** - Branch-wise loan portfolio management
+- **Customer KYC Management** - Complete customer lifecycle with PAN/Aadhar verification
+- **Loan Application Workflow** - Multi-stage application processing with status tracking
+- **Gold Asset Cataloging** - Detailed gold item management with purity and weight tracking
+- **Multi-level Approvals** - Hierarchical approval routing based on loan amounts
+- **Loan Disbursement** - Multiple disbursement modes with transaction tracking
+- **Payment Management** - EMI tracking with principal/interest/penalty breakdown
+- **Multi-branch Operations** - Branch-wise loan portfolio management
 
 ### Advanced Features
-- 📈 **Real-time Analytics** - Portfolio performance and risk metrics
-- 🔍 **Audit Trail System** - Complete change history with JSON storage
-- 🔄 **Automated Calculations** - Eligibility computation and EMI generation
-- 📱 **Materialized Views** - Pre-computed reports for instant insights
-- 🚀 **Performance Optimized** - Strategic indexing for sub-second queries
-- 🔒 **Data Integrity** - Foreign keys, constraints, and validation rules
+- **Real-time Analytics** - Portfolio performance and risk metrics
+- **Audit Trail System** - Complete change history with JSON storage
+- **Automated Calculations** - Eligibility computation and EMI generation
+- **Materialized Views** - Pre-computed reports for instant insights
+- **Performance Optimized** - Strategic indexing for sub-second queries
+- **Data Integrity** - Foreign keys, constraints, and validation rules
 
-## 🏗️ Database Architecture
+## Database Architecture
 
 ### Entity Relationship Model
 
@@ -79,7 +79,7 @@ This database system powers a complete gold loan management platform, enabling f
 - **Design Pattern**: Star schema for analytics
 - **Backup Strategy**: Daily full + hourly incremental
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 ```bash
@@ -92,8 +92,8 @@ This database system powers a complete gold loan management platform, enabling f
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/gold-loan-database.git
-cd gold-loan-database
+git clone https://github.com/MasterMindRomii/MySQL-Gold-Loan-Application-Project.git
+cd MySQL-Gold-Loan-Application-Project
 ```
 
 2. **Create database**
@@ -119,7 +119,7 @@ mysql -u root -p gold_loan_management < data/seed_data.sql
 mysql -u root -p gold_loan_management < tests/verify_schema.sql
 ```
 
-## 📊 Schema Details
+## Schema Details
 
 ### Core Tables
 
@@ -147,7 +147,7 @@ mysql -u root -p gold_loan_management < tests/verify_schema.sql
 - `sp_calculate_eligible_loan()` - Calculate maximum loan eligibility based on collateral
 - `sp_disburse_loan()` - Process loan disbursement with atomic transactions
 
-## 📝 Sample Queries
+## Sample Queries
 
 ### 1. Customer Portfolio Analysis
 ```sql
@@ -197,7 +197,7 @@ WHERE ga.status = 'PLEDGED'
 GROUP BY gps.purity_level;
 ```
 
-## ⚡ Performance Optimization
+## Performance Optimization
 
 ### Indexing Strategy
 - **Primary Indexes**: All tables have auto-increment primary keys
@@ -208,10 +208,10 @@ GROUP BY gps.purity_level;
 ### Query Performance Targets
 | Query Type | Target Time | Status |
 |------------|-------------|--------|
-| Customer lookup | < 10ms | ✅ |
-| Application search | < 50ms | ✅ |
-| Portfolio analytics | < 500ms | ✅ |
-| Complex reports | < 2s | ✅ |
+| Customer lookup | < 10ms | Achieved |
+| Application search | < 50ms | Achieved |
+| Portfolio analytics | < 500ms | Achieved |
+| Complex reports | < 2s | Achieved |
 
 ### Optimization Techniques
 - Strategic denormalization for reporting tables
@@ -220,7 +220,7 @@ GROUP BY gps.purity_level;
 - Connection pooling recommendations
 - Query result caching guidelines
 
-## 📚 Documentation
+## Documentation
 
 ### Available Documents
 - **[Design Document](docs/DESIGN.md)** - Detailed design decisions and rationale
@@ -235,7 +235,7 @@ GROUP BY gps.purity_level;
 - [Backup & Recovery](docs/BACKUP.md)
 - [Troubleshooting Guide](docs/TROUBLESHOOTING.md)
 
-## 🔧 Configuration
+## Configuration
 
 ### Database Settings (MySQL)
 ```ini
@@ -256,7 +256,7 @@ DB_USER=loan_admin
 DB_PASSWORD=secure_password_here
 ```
 
-## 🧪 Testing
+## Testing
 
 Run the test suite:
 ```bash
@@ -270,7 +270,7 @@ mysql -u root -p < tests/integrity_tests.sql
 mysql -u root -p < tests/performance_tests.sql
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please follow these guidelines:
 
@@ -281,13 +281,13 @@ Contributions are welcome! Please follow these guidelines:
 5. Open a Pull Request
 
 ### Contribution Areas
-- 🐛 Bug fixes and error handling
-- ⚡ Performance optimizations
-- 📝 Documentation improvements
-- ✨ New feature additions
-- 🧪 Test coverage expansion
+- Bug fixes and error handling
+- Performance optimizations
+- Documentation improvements
+- New feature additions
+- Test coverage expansion
 
-## 📈 Roadmap
+## Roadmap
 
 ### Version 2.0 (Planned)
 - [ ] Notification system (SMS/Email triggers)
@@ -303,34 +303,35 @@ Contributions are welcome! Please follow these guidelines:
 - [ ] Multi-currency support
 - [ ] Advanced risk scoring models
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👥 Authors
+## Author
 
-- **Your Name** - *Initial work* - [YourGitHub](https://github.com/yourusername)
+**Romi Gupta**
+- GitHub: [@MasterMindRomii](https://github.com/MasterMindRomii)
+- Project: [MySQL Gold Loan Application](https://github.com/MasterMindRomii/MySQL-Gold-Loan-Application-Project)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Database design patterns from industry best practices
 - SQL optimization techniques from MySQL documentation
 - Entity normalization principles from academic research
 
-## 📞 Support
+## Support
 
-- **Issues**: [GitHub Issues](https://github.com/yourusername/gold-loan-database/issues)
-- **Email**: your.email@example.com
-- **Documentation**: [Wiki](https://github.com/yourusername/gold-loan-database/wiki)
+- **Issues**: [GitHub Issues](https://github.com/MasterMindRomii/MySQL-Gold-Loan-Application-Project/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/MasterMindRomii/MySQL-Gold-Loan-Application-Project/discussions)
 
-## 📊 Project Stats
+## Project Stats
 
-![GitHub stars](https://img.shields.io/github/stars/yourusername/gold-loan-database?style=social)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/gold-loan-database?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/yourusername/gold-loan-database?style=social)
+![GitHub stars](https://img.shields.io/github/stars/MasterMindRomii/MySQL-Gold-Loan-Application-Project?style=social)
+![GitHub forks](https://img.shields.io/github/forks/MasterMindRomii/MySQL-Gold-Loan-Application-Project?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/MasterMindRomii/MySQL-Gold-Loan-Application-Project?style=social)
 
 ---
 
-**Note**: This is an academic/demonstration project. For production deployment, ensure proper security hardening, compliance reviews, and load testing.
+**Note**: This is an academic/demonstration project designed for the NATFLOW assessment. For production deployment, ensure proper security hardening, compliance reviews, and load testing.
 
-**Made with ❤️ for the database community**
+**Created by Romi Gupta**
